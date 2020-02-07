@@ -1,0 +1,6 @@
+name: EffectNuggets
+version: 1.0.0
+main: me.border.effectnuggets.Main
+commands:
+  effectnugget:
+    description: Effectnuggets's main command

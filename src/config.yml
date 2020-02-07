@@ -1,0 +1,98 @@
+IllegalArguments: '&cIllegal Arguments!'
+nopermission: '&cInsufficient Permissions!'
+targetoffline: '&c%target% Is offline or they do not exist!'
+
+Nugget:
+  one:
+    name: 'QuickHealing'
+    displayname: '&e&lQuickHealing Effect Nugget'
+    lore:
+      - '&f&lClick to activate the effect nugget'
+      - ''
+      - '&7((This nugget gives &dRegen II&7 & &bSpeed II &7for 6 seconds!))'
+    effects:
+      removecurrentpots: true
+      firsteffect:
+        effect: SPEED
+        duration: 6
+        level: 2
+      secondeffect:
+        enabled: true
+        effect: REGENERATION
+        duration: 6
+        level: 2
+  two:
+    name: 'Hasty'
+    displayname: '&e&lHasty Effect Nugget'
+    lore:
+      - '&f&lClick to activate the effect nugget'
+      - ''
+      - '&7((This nugget gives &dHaste II&7 & &bSpeed II &7for 6 seconds!))'
+    effects:
+      removecurrentpots: true
+      firsteffect:
+        effect: FAST_DIGGING
+        duration: 6
+        level: 2
+      secondeffect:
+        enabled: true
+        effect: SPEED
+        duration: 6
+        level: 2
+  three:
+    name: 'Strength'
+    displayname: '&e&lStrength Effect Nugget'
+    lore:
+      - '&f&lClick to activate the effect nugget'
+      - ''
+      - '&7((This nugget gives &cStrength II &7for 8 seconds!))'
+    effects:
+      removecurrentpots: true
+      firsteffect:
+        effect: INCREASE_DAMAGE
+        duration: 8
+        level: 2
+      secondeffect:
+        enabled: false
+        effect: SPEED
+        duration: 6
+        level: 2
+  four:
+    name: 'Invis'
+    displayname: '&e&lInvis Effect Nugget'
+    lore:
+      - '&f&lClick to activate the effect nugget'
+      - ''
+      - '&7((This nugget gives &fInvis &7for 12 seconds!))'
+    effects:
+      removecurrentpots: true
+      firsteffect:
+        effect: INVISIBILITY
+        duration: 12
+        level: 2
+      secondeffect:
+        enabled: false
+        effect: SPEED
+        duration: 6
+        level: 2
+  five:
+    name: 'Water'
+    displayname: '&e&lWater Effect Nugget'
+    lore:
+      - '&f&lClick to activate the effect nugget'
+      - ''
+      - '&7((This nugget gives &eNight Vision&7 & &3Water Breathing II &7for 30 seconds!))'
+    effects:
+      removecurrentpots: true
+      firsteffect:
+        effect: NIGHT_VISION
+        duration: 30
+        level: 1
+      secondeffect:
+        enabled: true
+        effect: WATER_BREATHING
+        duration: 30
+        level: 1
+  messages:
+    received: '&eYou have been given &a%amount%&e &5%type% &eeffect nuggets!'
+    given: '&eYou have successfully given &b%target% &a%amount%&e &5%type% &eeffect nuggets!'
